@@ -1,0 +1,1959 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Plataforma de Estudos | Instrutor Micael Lucas — +40 Simulados Completos</title>
+  <meta name="description" content="Plataforma de estudos com mais de 40 simulados completos no sistema parecido com o dia da prova do Detran, videoaulas e passo a passo de como tirar sua CNH.">
+  <link rel="icon" type="image/jpeg" href="logomicaellucas.jpeg">
+  <link rel="apple-touch-icon" href="logomicaellucas.jpeg">
+
+  <!-- Google Fonts: Montserrat & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+  <!-- Font Awesome 6 -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+  <style>
+    :root {
+      --navy: #07172f;
+      --navy-mid: #0c2346;
+      --navy-light: #13315c;
+      --gold: #f7bd2f;
+      --gold-dark: #d99f12;
+      --blue: #2563eb;
+      --green: #059669;
+      --green-bright: #10b981;
+      --red: #e11d48;
+      --purple: #4f46e5;
+      --ink: #13213a;
+      --muted: #64748b;
+      --line: #e1e8f2;
+      --bg: #f4f7fb;
+      --card-shadow: 0 14px 34px rgba(7, 23, 47, 0.08);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--bg);
+      color: var(--ink);
+      line-height: 1.55;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: 'Montserrat', sans-serif;
+      line-height: 1.16;
+      letter-spacing: -0.02em;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    button {
+      font-family: inherit;
+      cursor: pointer;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    /* Container Mobile-First */
+    .mobile-wrap {
+      width: 100%;
+      max-width: 540px;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+
+    @media (min-width: 768px) {
+      .mobile-wrap {
+        max-width: 680px;
+        padding: 0 24px;
+      }
+    }
+
+    /* Barra de Topo de Urgência */
+    .top-notice {
+      background: linear-gradient(90deg, #f7bd2f 0%, #ffcf56 50%, #f7bd2f 100%);
+      color: #07172f;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+      font-size: 11.5px;
+      text-align: center;
+      padding: 8px 12px;
+      letter-spacing: 0.03em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+
+    /* Header da Marca (idêntico à plataforma) */
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 60;
+      background: rgba(7, 23, 47, 0.96);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid #1e3557;
+      color: #fff;
+    }
+
+    .topbar-inner {
+      min-height: 62px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .brand-logo {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      object-fit: cover;
+      border: 1.5px solid rgba(247, 189, 47, 0.65);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+      flex-shrink: 0;
+    }
+
+    .brand-text small {
+      display: block;
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      color: #aab8cd;
+      text-transform: uppercase;
+    }
+
+    .brand-text strong {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14px;
+      font-weight: 800;
+      color: #fff;
+      letter-spacing: 0.01em;
+    }
+
+    .detran-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(247, 189, 47, 0.45);
+      background: rgba(247, 189, 47, 0.08);
+      color: #e2e8f0;
+      font-size: 10.5px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .detran-badge i {
+      color: var(--gold);
+    }
+
+    /* ==========================================
+       HERO SECTION (MOBILE FIRST)
+       ========================================== */
+    .hero {
+      background:
+        radial-gradient(circle at 85% 12%, rgba(37, 99, 235, 0.28), transparent 42%),
+        radial-gradient(circle at 15% 85%, rgba(247, 189, 47, 0.14), transparent 45%),
+        linear-gradient(160deg, #061326 0%, #0a2147 100%);
+      color: #ffffff;
+      padding: 28px 0 38px;
+      border-bottom: 3px solid var(--gold);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .eyebrow-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 6px 13px;
+      border-radius: 999px;
+      background: rgba(247, 189, 47, 0.14);
+      border: 1px solid rgba(247, 189, 47, 0.45);
+      color: var(--gold);
+      font-family: 'Montserrat', sans-serif;
+      font-size: 10.5px;
+      font-weight: 800;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+
+    .hero-center {
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: clamp(26px, 7.2vw, 38px);
+      font-weight: 900;
+      color: #ffffff;
+      margin-bottom: 12px;
+      line-height: 1.14;
+    }
+
+    .hero h1 .gold {
+      color: var(--gold);
+      display: inline;
+    }
+
+    .hero h1 .underline-gold {
+      color: var(--gold);
+      text-decoration: underline;
+      text-decoration-color: rgba(247, 189, 47, 0.45);
+      text-underline-offset: 4px;
+    }
+
+    .hero-sub {
+      color: #c5d2e6;
+      font-size: 14.5px;
+      line-height: 1.55;
+      margin: 0 auto 20px;
+      max-width: 480px;
+    }
+
+    .hero-sub strong {
+      color: #ffffff;
+    }
+
+    /* Pílulas Rápidas de Destaque no Hero */
+    .hero-Highlights {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+
+    .hero-stat-box {
+      background: rgba(18, 43, 77, 0.75);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 12px;
+      padding: 10px 6px;
+      text-align: center;
+    }
+
+    .hero-stat-box strong {
+      display: block;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 18px;
+      font-weight: 900;
+      color: var(--gold);
+      line-height: 1.1;
+    }
+
+    .hero-stat-box span {
+      font-size: 10.5px;
+      color: #cbd5e1;
+      font-weight: 600;
+      display: block;
+      margin-top: 3px;
+      line-height: 1.2;
+    }
+
+    /* Mockup de Notebook na Dobra Principal (Hero) */
+    .laptop-mockup-wrap {
+      margin: 4px auto 24px;
+      width: 100%;
+      position: relative;
+      padding: 0 4px;
+    }
+
+    .laptop-screen {
+      background: #0b111e;
+      border: 2px solid #334155;
+      border-bottom: none;
+      border-radius: 14px 14px 0 0;
+      padding: 12px 8px 8px;
+      position: relative;
+      width: 94%;
+      margin: 0 auto;
+      box-shadow:
+        0 20px 45px rgba(0, 0, 0, 0.55),
+        0 0 32px rgba(247, 189, 47, 0.16);
+    }
+
+    /* Câmera da borda superior do notebook */
+    .laptop-camera {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #1e293b;
+      border: 1px solid #475569;
+      margin: 0 auto 6px;
+      position: relative;
+    }
+
+    .laptop-camera::after {
+      content: '';
+      position: absolute;
+      top: 1px;
+      left: 1px;
+      width: 2px;
+      height: 2px;
+      border-radius: 50%;
+      background: #38bdf8;
+    }
+
+    .laptop-display {
+      border-radius: 6px;
+      overflow: hidden;
+      background: #07172f;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .laptop-display img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* Base metálica do notebook */
+    .laptop-base {
+      width: 100%;
+      height: 14px;
+      background: linear-gradient(180deg, #cbd5e1 0%, #94a3b8 55%, #475569 100%);
+      border-radius: 2px 2px 12px 12px;
+      position: relative;
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Entalhe central de abrir o notebook */
+    .laptop-notch {
+      width: 58px;
+      height: 5px;
+      background: #475569;
+      border-radius: 0 0 6px 6px;
+      margin: 0 auto;
+      box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.45);
+    }
+
+    .laptop-caption {
+      margin-top: 10px;
+      font-size: 11.5px;
+      color: #cbd5e1;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+
+    .laptop-caption i {
+      color: var(--gold);
+    }
+
+    /* Botão CTA Principal */
+    .btn-cta {
+      width: 100%;
+      border: 0;
+      border-radius: 14px;
+      padding: 16px 20px;
+      background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+      color: #ffffff;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 15.5px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      box-shadow: 0 10px 25px rgba(5, 150, 105, 0.42);
+      transition: transform 0.18s ease, box-shadow 0.18s ease;
+      animation: ctaPulse 2.2s infinite;
+    }
+
+    .btn-cta:active {
+      transform: scale(0.98);
+    }
+
+    .btn-cta.gold-cta {
+      background: linear-gradient(135deg, #f7bd2f 0%, #e5a50a 100%);
+      color: #07172f;
+      box-shadow: 0 10px 25px rgba(247, 189, 47, 0.35);
+    }
+
+    @keyframes ctaPulse {
+      0%, 100% { box-shadow: 0 10px 25px rgba(5, 150, 105, 0.42), 0 0 0 0 rgba(16, 185, 129, 0.45); }
+      50% { box-shadow: 0 10px 30px rgba(5, 150, 105, 0.6), 0 0 0 8px rgba(16, 185, 129, 0); }
+    }
+
+    .cta-micro-trust {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-top: 11px;
+      font-size: 11.5px;
+      color: #cbd5e1;
+      font-weight: 500;
+    }
+
+    .cta-micro-trust span {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .cta-micro-trust i {
+      color: var(--gold);
+    }
+
+    /* ==========================================
+       SEÇÕES PADRÃO
+       ========================================== */
+    .section {
+      padding: 36px 0;
+    }
+
+    .section-dark {
+      background: linear-gradient(165deg, #07172f 0%, #0d254c 100%);
+      color: #ffffff;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 22px;
+    }
+
+    .section-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 11px;
+      border-radius: 999px;
+      background: #e8f0fe;
+      color: var(--blue);
+      font-family: 'Montserrat', sans-serif;
+      font-size: 10.5px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 10px;
+    }
+
+    .section-dark .section-tag {
+      background: rgba(247, 189, 47, 0.15);
+      color: var(--gold);
+      border: 1px solid rgba(247, 189, 47, 0.35);
+    }
+
+    .section-header h2 {
+      font-size: clamp(22px, 6vw, 30px);
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+
+    .section-header p {
+      font-size: 14px;
+      color: var(--muted);
+      max-width: 460px;
+      margin: 0 auto;
+    }
+
+    .section-dark .section-header p {
+      color: #bdc9da;
+    }
+
+    /* ==========================================
+       O GRANDE DIFERENCIAL: +40 SIMULADOS INTERATIVO
+       ========================================== */
+    .sim-highlight-banner {
+      background: linear-gradient(135deg, #07172f 0%, #132f5c 100%);
+      border: 2px solid var(--gold);
+      border-radius: 18px;
+      padding: 20px 16px;
+      color: #fff;
+      margin-bottom: 18px;
+      box-shadow: 0 14px 32px rgba(7, 23, 47, 0.16);
+    }
+
+    .sim-banner-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 12px;
+      flex-wrap: wrap;
+    }
+
+    .sim-badge-gold {
+      background: var(--gold);
+      color: var(--navy);
+      font-family: 'Montserrat', sans-serif;
+      font-size: 10.5px;
+      font-weight: 900;
+      padding: 5px 11px;
+      border-radius: 99px;
+      text-transform: uppercase;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .sim-banner-top span.total-questions {
+      font-size: 11.5px;
+      color: #cbd5e1;
+      font-weight: 700;
+    }
+
+    .sim-highlight-banner h3 {
+      font-size: 20px;
+      margin-bottom: 8px;
+      color: #fff;
+    }
+
+    .sim-highlight-banner h3 span {
+      color: var(--gold);
+    }
+
+    .sim-highlight-banner p {
+      font-size: 13.5px;
+      color: #cbd5e1;
+      margin-bottom: 14px;
+    }
+
+    .sim-features-mini {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 8px;
+    }
+
+    .sim-feat-pill {
+      background: rgba(255, 255, 255, 0.07);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 10px;
+      padding: 9px 10px;
+      font-size: 12px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: #f1f5f9;
+    }
+
+    .sim-feat-pill i {
+      color: var(--gold);
+      font-size: 14px;
+    }
+
+    /* Demo Interativo do Sistema de Prova */
+    .live-sim-demo {
+      background: #ffffff;
+      border: 2px solid #cbd5e1;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: var(--card-shadow);
+    }
+
+    .live-sim-topbar {
+      background: var(--navy);
+      color: #fff;
+      padding: 11px 14px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+    }
+
+    .live-sim-title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 12px;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .live-sim-title i {
+      color: var(--gold);
+    }
+
+    .live-sim-timer {
+      background: #142d4f;
+      border: 1px solid #365171;
+      border-radius: 8px;
+      padding: 4px 10px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+      font-size: 13px;
+      color: var(--gold);
+    }
+
+    .live-sim-body {
+      padding: 16px;
+    }
+
+    .live-q-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+
+    .live-q-num {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 10.5px;
+      font-weight: 800;
+      color: var(--muted);
+      text-transform: uppercase;
+    }
+
+    .live-q-cat {
+      background: #eaf1ff;
+      color: #1d4ed8;
+      border-radius: 99px;
+      padding: 3px 10px;
+      font-size: 10.5px;
+      font-weight: 800;
+    }
+
+    .live-q-text {
+      font-size: 14.5px;
+      font-weight: 600;
+      color: var(--ink);
+      margin-bottom: 14px;
+      line-height: 1.45;
+    }
+
+    .live-options {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+
+    .live-op-btn {
+      width: 100%;
+      text-align: left;
+      border: 2px solid var(--line);
+      border-radius: 11px;
+      padding: 11px 13px;
+      background: #fff;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--ink);
+      display: flex;
+      align-items: flex-start;
+      gap: 9px;
+      transition: 0.15s;
+    }
+
+    .live-op-btn:hover {
+      border-color: var(--blue);
+      background: #f8fbff;
+    }
+
+    .live-op-btn.correct {
+      border-color: var(--green);
+      background: #ecfdf5;
+      color: #065f46;
+      font-weight: 700;
+    }
+
+    .live-op-btn.wrong {
+      border-color: var(--red);
+      background: #fff1f2;
+      color: #9f1239;
+      font-weight: 600;
+    }
+
+    .op-letter {
+      width: 24px;
+      height: 24px;
+      border-radius: 6px;
+      background: #f1f5f9;
+      color: #475569;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+      font-size: 11.5px;
+      display: grid;
+      place-items: center;
+      flex-shrink: 0;
+    }
+
+    .live-op-btn.correct .op-letter {
+      background: var(--green);
+      color: #fff;
+    }
+
+    .live-op-btn.wrong .op-letter {
+      background: var(--red);
+      color: #fff;
+    }
+
+    .live-feedback {
+      display: none;
+      padding: 11px 13px;
+      border-radius: 10px;
+      font-size: 12.5px;
+      font-weight: 600;
+      margin-bottom: 12px;
+      line-height: 1.45;
+    }
+
+    .live-feedback.show {
+      display: block;
+    }
+
+    .live-feedback.ok {
+      background: #d1fae5;
+      color: #065f46;
+      border-left: 4px solid var(--green);
+    }
+
+    .live-feedback.nok {
+      background: #fee2e2;
+      color: #991b1b;
+      border-left: 4px solid var(--red);
+    }
+
+    .live-grid-footer {
+      border-top: 1px solid var(--line);
+      padding-top: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .mini-q-balls {
+      display: flex;
+      gap: 5px;
+      align-items: center;
+    }
+
+    .q-ball {
+      width: 26px;
+      height: 26px;
+      border-radius: 7px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 11px;
+      font-weight: 800;
+      display: grid;
+      place-items: center;
+      border: 1.5px solid var(--line);
+      color: #64748b;
+      background: #f8fafc;
+    }
+
+    .q-ball.done {
+      background: #d1fae5;
+      border-color: var(--green);
+      color: #065f46;
+    }
+
+    .q-ball.current {
+      background: var(--blue);
+      border-color: var(--blue);
+      color: #fff;
+    }
+
+    .try-hint {
+      font-size: 11.5px;
+      font-weight: 700;
+      color: var(--blue);
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    /* ==========================================
+       OS 6 MÓDULOS DA PLATAFORMA (IGUAL AOS PRINTS)
+       ========================================== */
+    .modules-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+    }
+
+    @media (min-width: 500px) {
+      .modules-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    .mod-card {
+      background: #ffffff;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 18px 16px;
+      box-shadow: 0 4px 14px rgba(15, 23, 42, 0.05);
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      transition: transform 0.2s ease;
+    }
+
+    .mod-card.featured-mod {
+      border: 2px solid var(--gold);
+      background: linear-gradient(155deg, #ffffff 0%, #fffbeb 100%);
+    }
+
+    .mod-card-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 12px;
+    }
+
+    .mod-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: var(--mc, var(--blue));
+      color: #ffffff;
+      display: grid;
+      place-items: center;
+      font-size: 18px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .mod-tag {
+      background: #f1f5f9;
+      color: #475569;
+      border-radius: 99px;
+      padding: 4px 9px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 9px;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .mod-card h3 {
+      font-size: 16.5px;
+      font-weight: 800;
+      color: var(--ink);
+      margin-bottom: 6px;
+    }
+
+    .mod-card p {
+      font-size: 13px;
+      color: var(--muted);
+      line-height: 1.48;
+      margin-bottom: 14px;
+    }
+
+    .mod-footer {
+      margin-top: auto;
+      padding-top: 11px;
+      border-top: 1px solid #edf1f6;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 11.5px;
+      font-weight: 700;
+      color: var(--green);
+    }
+
+    .mod-footer span.status-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      background: #ecfdf5;
+      color: #047857;
+      padding: 4px 10px;
+      border-radius: 99px;
+      font-size: 11px;
+      font-weight: 800;
+    }
+
+    /* ==========================================
+       VIDEOAULAS + PASSO A PASSO DA CNH
+       ========================================== */
+    .feature-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .feature-row-card {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.13);
+      border-radius: 16px;
+      padding: 18px 16px;
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+    }
+
+    .feature-row-icon {
+      width: 46px;
+      height: 46px;
+      border-radius: 13px;
+      background: rgba(247, 189, 47, 0.16);
+      border: 1px solid rgba(247, 189, 47, 0.4);
+      color: var(--gold);
+      display: grid;
+      place-items: center;
+      font-size: 20px;
+      flex-shrink: 0;
+    }
+
+    .feature-row-body h3 {
+      font-size: 16px;
+      color: #ffffff;
+      margin-bottom: 5px;
+    }
+
+    .feature-row-body p {
+      font-size: 13px;
+      color: #cbd5e1;
+      line-height: 1.5;
+    }
+
+    .step-pills-scroll {
+      display: flex;
+      gap: 7px;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+
+    .step-mini-pill {
+      background: rgba(7, 23, 47, 0.75);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      color: #e2e8f0;
+      border-radius: 8px;
+      padding: 4px 9px;
+      font-size: 11px;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .step-mini-pill b {
+      color: var(--gold);
+    }
+
+    /* ==========================================
+       COMPARATIVO: POR QUE VALE A PENA
+       ========================================== */
+    .compare-box {
+      background: #ffffff;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: var(--card-shadow);
+    }
+
+    .compare-col {
+      padding: 18px 16px;
+    }
+
+    .compare-col.bad {
+      background: #fff5f5;
+      border-bottom: 1px solid #fecdd3;
+    }
+
+    .compare-col.good {
+      background: #f0fdf4;
+    }
+
+    .compare-title {
+      font-size: 14.5px;
+      font-weight: 800;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .compare-col.bad .compare-title { color: #be123c; }
+    .compare-col.good .compare-title { color: #047857; }
+
+    .compare-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+    }
+
+    .compare-list li {
+      font-size: 13px;
+      display: flex;
+      align-items: flex-start;
+      gap: 9px;
+      line-height: 1.42;
+      color: #334155;
+    }
+
+    .compare-list li i {
+      margin-top: 2px;
+      flex-shrink: 0;
+    }
+
+    .compare-col.bad .compare-list li i { color: #e11d48; }
+    .compare-col.good .compare-list li i { color: #059669; }
+
+    /* ==========================================
+       PROVA SOCIAL / DEPOIMENTOS DE ALUNOS
+       ========================================== */
+    .testimonials-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .testi-card {
+      background: #ffffff;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 16px;
+      box-shadow: 0 4px 14px rgba(7, 23, 47, 0.05);
+    }
+
+    .testi-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+
+    .testi-user {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .testi-avatar {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: var(--navy);
+      color: var(--gold);
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+      font-size: 14px;
+      display: grid;
+      place-items: center;
+    }
+
+    .testi-name strong {
+      display: block;
+      font-size: 13.5px;
+      color: var(--ink);
+    }
+
+    .testi-name span {
+      font-size: 11px;
+      color: var(--green);
+      font-weight: 700;
+    }
+
+    .testi-stars {
+      color: #f59e0b;
+      font-size: 12px;
+    }
+
+    .testi-text {
+      font-size: 13px;
+      color: #475569;
+      line-height: 1.5;
+    }
+
+    /* ==========================================
+       CARD DE OFERTA (ALTA CONVERSÃO)
+       ========================================== */
+    .offer-card {
+      background: linear-gradient(165deg, #07172f 0%, #0d254c 100%);
+      border: 2.5px solid var(--gold);
+      border-radius: 22px;
+      padding: 26px 18px 24px;
+      color: #ffffff;
+      text-align: center;
+      position: relative;
+      box-shadow: 0 20px 50px rgba(7, 23, 47, 0.28);
+      margin-top: 12px;
+    }
+
+    .offer-top-ribbon {
+      position: absolute;
+      top: -13px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--gold);
+      color: var(--navy);
+      font-family: 'Montserrat', sans-serif;
+      font-size: 11px;
+      font-weight: 900;
+      padding: 5px 16px;
+      border-radius: 99px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      white-space: nowrap;
+      box-shadow: 0 4px 12px rgba(247, 189, 47, 0.4);
+    }
+
+    .offer-title {
+      font-size: 22px;
+      font-weight: 900;
+      margin-top: 6px;
+      margin-bottom: 4px;
+    }
+
+    .offer-sub {
+      font-size: 12.5px;
+      color: #cbd5e1;
+      margin-bottom: 16px;
+    }
+
+    .offer-checklist {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 14px;
+      padding: 14px;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 18px;
+    }
+
+    .offer-check-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 13px;
+      color: #f1f5f9;
+      line-height: 1.38;
+    }
+
+    .offer-check-item i {
+      color: #10b981;
+      font-size: 15px;
+      margin-top: 2px;
+      flex-shrink: 0;
+    }
+
+    .offer-check-item strong {
+      color: var(--gold);
+    }
+
+    .price-box {
+      background: rgba(7, 23, 47, 0.65);
+      border: 1px solid rgba(247, 189, 47, 0.35);
+      border-radius: 16px;
+      padding: 16px 14px;
+      margin-bottom: 18px;
+    }
+
+    .price-old {
+      font-size: 13px;
+      color: #94a3b8;
+      text-decoration: line-through;
+      font-weight: 600;
+    }
+
+    .price-main {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 38px;
+      font-weight: 900;
+      color: var(--gold);
+      line-height: 1.05;
+      margin: 4px 0;
+    }
+
+    .price-main small {
+      font-size: 16px;
+      font-weight: 700;
+      color: #ffffff;
+    }
+
+    .price-cash {
+      font-size: 13.5px;
+      color: #e2e8f0;
+      font-weight: 600;
+    }
+
+    .guarantee-strip {
+      margin-top: 16px;
+      padding: 12px;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-align: left;
+    }
+
+    .guarantee-strip i {
+      font-size: 28px;
+      color: var(--gold);
+      flex-shrink: 0;
+    }
+
+    .guarantee-strip div strong {
+      display: block;
+      font-size: 13px;
+      color: #fff;
+    }
+
+    .guarantee-strip div span {
+      font-size: 11.5px;
+      color: #cbd5e1;
+      line-height: 1.35;
+      display: block;
+    }
+
+    /* ==========================================
+       FAQ (PERGUNTAS FREQUENTES)
+       ========================================== */
+    .faq-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    details.faq-item {
+      background: #ffffff;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      overflow: hidden;
+    }
+
+    details.faq-item summary {
+      list-style: none;
+      padding: 15px 16px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 13.5px;
+      font-weight: 800;
+      color: var(--ink);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      cursor: pointer;
+    }
+
+    details.faq-item summary::-webkit-details-marker {
+      display: none;
+    }
+
+    details.faq-item summary i {
+      color: var(--blue);
+      transition: transform 0.2s ease;
+    }
+
+    details.faq-item[open] summary i {
+      transform: rotate(180deg);
+    }
+
+    .faq-body {
+      padding: 0 16px 15px;
+      font-size: 13px;
+      color: #475569;
+      line-height: 1.55;
+      border-top: 1px solid #f1f5f9;
+      padding-top: 12px;
+    }
+
+    /* ==========================================
+       FOOTER & STICKY BAR MOBILE
+       ========================================== */
+    .footer {
+      background: var(--navy);
+      color: #94a3b8;
+      text-align: center;
+      padding: 28px 16px 36px;
+      font-size: 11.5px;
+      border-top: 1px solid #1e3557;
+    }
+
+    .footer strong {
+      color: #fff;
+    }
+
+    .sticky-mobile-cta {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 90;
+      background: rgba(7, 23, 47, 0.96);
+      backdrop-filter: blur(10px);
+      border-top: 1px solid rgba(247, 189, 47, 0.35);
+      padding: 10px 14px calc(10px + env(safe-area-inset-bottom, 0px));
+      box-shadow: 0 -8px 25px rgba(7, 23, 47, 0.35);
+    }
+
+    .sticky-inner {
+      max-width: 540px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .sticky-info {
+      min-width: 0;
+    }
+
+    .sticky-info small {
+      display: block;
+      font-size: 10px;
+      color: var(--gold);
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .sticky-info strong {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 13px;
+      color: #ffffff;
+      display: block;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .sticky-btn {
+      background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+      color: #ffffff;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+      font-size: 12.5px;
+      padding: 11px 16px;
+      border-radius: 10px;
+      white-space: nowrap;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      box-shadow: 0 4px 14px rgba(16, 185, 129, 0.35);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 1. HERO: Promessa Principal + Preview Real da Plataforma -->
+  <section class="hero" id="inicio">
+    <div class="mobile-wrap hero-center">
+      <span class="eyebrow-pill">
+        <i class="fa-solid fa-graduation-cap"></i> Plataforma Teórica de Apoio
+      </span>
+
+      <h1>
+        A Plataforma de Estudos com <span class="underline-gold">Mais de 40 Simulados Completos</span> para a CNH
+      </h1>
+
+      <p class="hero-sub">
+        Treine em um <strong>sistema parecido com o que você vai ter no dia da prova oficial</strong>, assista às videoaulas e siga o passo a passo completo para chegar pronto e passar de primeira.
+      </p>
+
+      <!-- 3 Métricas Rápidas -->
+      <div class="hero-Highlights">
+        <div class="hero-stat-box">
+          <strong>+40</strong>
+          <span>Simulados no Modo Prova</span>
+        </div>
+        <div class="hero-stat-box">
+          <strong>+1.100</strong>
+          <span>Questões do Detran</span>
+        </div>
+        <div class="hero-stat-box">
+          <strong>6 Módulos</strong>
+          <span>Videoaulas + Passo a Passo</span>
+        </div>
+      </div>
+
+      <!-- Mockup de Notebook com o Simulado Oficial -->
+      <div class="laptop-mockup-wrap">
+        <div class="laptop-screen">
+          <div class="laptop-camera"></div>
+          <div class="laptop-display">
+            <img src="assets/print-simulado.jpg" alt="Simulado Completo Modo Prova Real na Plataforma do Instrutor Micael Lucas">
+          </div>
+        </div>
+        <div class="laptop-base">
+          <div class="laptop-notch"></div>
+        </div>
+        <div class="laptop-caption">
+          <i class="fa-solid fa-laptop-file"></i> Visão real do Simulado com o mesmo estilo do dia da prova
+        </div>
+      </div>
+
+      <a href="#oferta" class="btn-cta">
+        <span>QUERO ACESSAR A PLATAFORMA AGORA</span>
+        <i class="fa-solid fa-arrow-right"></i>
+      </a>
+
+      <div class="cta-micro-trust">
+        <span><i class="fa-solid fa-mobile-screen-button"></i> Estude pelo Celular</span>
+        <span><i class="fa-solid fa-bolt"></i> Liberação Imediata</span>
+        <span><i class="fa-solid fa-shield-check"></i> 7 Dias de Garantia</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. O GRANDE DIFERENCIAL: +40 SIMULADOS NO SISTEMA DA PROVA -->
+  <section class="section" id="simulados">
+    <div class="mobile-wrap">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-trophy"></i> O Maior Diferencial</span>
+        <h2>Treine antes no mesmo formato que você vai encontrar no Detran</h2>
+        <p>Muita gente reprova por nervosismo ou por não conhecer a tela da prova. Aqui você chega acostumado.</p>
+      </div>
+
+      <div class="sim-highlight-banner">
+        <div class="sim-banner-top">
+          <span class="sim-badge-gold"><i class="fa-solid fa-star"></i> MODO PROVA REAL</span>
+          <span class="total-questions"><i class="fa-solid fa-list-check"></i> +40 Provas Completas</span>
+        </div>
+        <h3>Mais de 40 Simulados Completos <span>Prontos para Você Testar</span></h3>
+        <p>Simulados gerais e separados por matéria (Legislação, Sinalização e Placas, Direção Defensiva, Primeiros Socorros, Meio Ambiente e Mecânica).</p>
+        <div class="sim-features-mini">
+          <div class="sim-feat-pill">
+            <i class="fa-solid fa-clock"></i>
+            <span>Cronômetro 60 min</span>
+          </div>
+          <div class="sim-feat-pill">
+            <i class="fa-solid fa-table-cells"></i>
+            <span>Grade de 30 questões</span>
+          </div>
+          <div class="sim-feat-pill">
+            <i class="fa-solid fa-circle-check"></i>
+            <span>Meta de 21 acertos</span>
+          </div>
+          <div class="sim-feat-pill">
+            <i class="fa-solid fa-file-circle-check"></i>
+            <span>Gabarito e Revisão</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mini-Simulador Interativo para o Aluno Testar na Hora -->
+      <div class="live-sim-demo">
+        <div class="live-sim-topbar">
+          <span class="live-sim-title">
+            <i class="fa-solid fa-clipboard-check"></i> Simulado Oficial #01 (Teste Rápido)
+          </span>
+          <div class="live-sim-timer">
+            <i class="fa-solid fa-clock"></i>
+            <span id="demo-timer">59:42</span>
+          </div>
+        </div>
+
+        <div class="live-sim-body">
+          <div class="live-q-meta">
+            <span class="live-q-num">Questão 04 de 30</span>
+            <span class="live-q-cat">Legislação de Trânsito</span>
+          </div>
+
+          <p class="live-q-text">
+            Ao concluir o processo de primeira habilitação e ser aprovado nos exames, o candidato recebe inicialmente qual documento válido por 1 ano?
+          </p>
+
+          <div class="live-options" id="demo-options">
+            <button type="button" class="live-op-btn" onclick="answerDemo(this, false)">
+              <span class="op-letter">A</span>
+              <span>CNH Definitiva com validade de 10 anos.</span>
+            </button>
+            <button type="button" class="live-op-btn" onclick="answerDemo(this, true)">
+              <span class="op-letter">B</span>
+              <span>PPD (Permissão Para Dirigir), válida por 1 ano sem infrações graves ou gravíssimas.</span>
+            </button>
+            <button type="button" class="live-op-btn" onclick="answerDemo(this, false)">
+              <span class="op-letter">C</span>
+              <span>ACC (Autorização para Conduzir Ciclomotor) provisória.</span>
+            </button>
+            <button type="button" class="live-op-btn" onclick="answerDemo(this, false)">
+              <span class="op-letter">D</span>
+              <span>CRLV Digital emitido pelo aplicativo.</span>
+            </button>
+          </div>
+
+          <div id="demo-feedback" class="live-feedback"></div>
+
+          <div class="live-grid-footer">
+            <div class="mini-q-balls">
+              <span class="q-ball done">1</span>
+              <span class="q-ball done">2</span>
+              <span class="q-ball done">3</span>
+              <span class="q-ball current">4</span>
+              <span class="q-ball">5</span>
+              <span class="q-ball">...</span>
+              <span class="q-ball">30</span>
+            </div>
+            <span class="try-hint">
+              <i class="fa-solid fa-hand-point-up"></i> Toque em uma alternativa!
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. VIDEOAULAS + COMO TIRAR A CNH PASSO A PASSO -->
+  <section class="section section-dark">
+    <div class="mobile-wrap">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-circle-play"></i> Preparação Completa</span>
+        <h2>Muito além dos simulados: Videoaulas + Passo a Passo da CNH</h2>
+        <p>Você não fica perdido em nenhuma etapa. Tudo organizado para assistir e ler direto do celular.</p>
+      </div>
+
+      <div class="feature-stack">
+        <!-- Item 1: Videoaulas -->
+        <div class="feature-row-card">
+          <div class="feature-row-icon">
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+          <div class="feature-row-body">
+            <h3>Videoaulas Completas para a Prova Teórica</h3>
+            <p>Prefere aprender assistindo? A plataforma conta com uma área exclusiva de videoaulas didáticas cobrindo todo o conteúdo cobrado na prova do Detran, sem sair do sistema.</p>
+          </div>
+        </div>
+
+        <!-- Item 2: Passo a Passo CNH -->
+        <div class="feature-row-card">
+          <div class="feature-row-icon">
+            <i class="fa-solid fa-route"></i>
+          </div>
+          <div class="feature-row-body">
+            <h3>Guia Definitivo: Como Tirar a CNH Passo a Passo</h3>
+            <p>As 7 etapas explicadas sem enrolação: desde baixar o app CNH Digital Brasil, abertura no Detran e taxas, até o psicotécnico, agendamento da teórica e prova prática.</p>
+            <div class="step-pills-scroll">
+              <span class="step-mini-pill"><b>1.</b> App CNH Digital</span>
+              <span class="step-mini-pill"><b>2.</b> Abertura Detran</span>
+              <span class="step-mini-pill"><b>3.</b> Psicotécnico</span>
+              <span class="step-mini-pill"><b>4.</b> Prova Teórica</span>
+              <span class="step-mini-pill"><b>5.</b> Aulas Práticas</span>
+              <span class="step-mini-pill"><b>6.</b> Exame Prático</span>
+              <span class="step-mini-pill"><b>7.</b> PPD e CNH</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 3: Apostila Digital Interativa -->
+        <div class="feature-row-card">
+          <div class="feature-row-icon">
+            <i class="fa-solid fa-book-open-reader"></i>
+          </div>
+          <div class="feature-row-body">
+            <h3>Apostila Digital nas 6 Disciplinas + Quadros de Revisão</h3>
+            <p>Conteúdo completo com quadros visuais e alertas de "Atenção para a prova" nas matérias de Legislação, Direção Defensiva, Primeiros Socorros, Cidadania, Meio Ambiente e Mecânica.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. TODOS OS 6 MÓDULOS DO SISTEMA DE ENSINO -->
+  <section class="section" id="modulos">
+    <div class="mobile-wrap">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-layer-group"></i> Por Dentro do Sistema</span>
+        <h2>Veja os 6 Módulos que você recebe acesso imediato</h2>
+        <p>Exatamente como na plataforma oficial do Instrutor Micael Lucas:</p>
+      </div>
+
+      <div class="modules-grid">
+        <!-- Módulo 1 -->
+        <article class="mod-card" style="--mc:#2563eb">
+          <div class="mod-card-top">
+            <span class="mod-icon"><i class="fa-solid fa-id-card"></i></span>
+            <span class="mod-tag">PASSO A PASSO</span>
+          </div>
+          <h3>Guia Definitivo da CNH</h3>
+          <p>Entenda todo o processo da primeira habilitação, dos exames às aulas e à aprovação nas 7 etapas.</p>
+          <div class="mod-footer">
+            <span><i class="fa-regular fa-clock"></i> Guia em 7 etapas</span>
+            <span class="status-pill"><i class="fa-solid fa-check"></i> Incluso</span>
+          </div>
+        </article>
+
+        <!-- Módulo 2 -->
+        <article class="mod-card" style="--mc:#f59e0b">
+          <div class="mod-card-top">
+            <span class="mod-icon"><i class="fa-solid fa-book-open"></i></span>
+            <span class="mod-tag">VIDEOAULAS + LEITURA</span>
+          </div>
+          <h3>Preparatório para Prova Teórica</h3>
+          <p>Estude por videoaulas completas ou leia o manual interativo organizado em seis disciplinas oficiais.</p>
+          <div class="mod-footer">
+            <span><i class="fa-solid fa-circle-play"></i> Vídeo + Apostila</span>
+            <span class="status-pill"><i class="fa-solid fa-check"></i> Incluso</span>
+          </div>
+        </article>
+
+        <!-- Módulo 3 -->
+        <article class="mod-card" style="--mc:#4f46e5">
+          <div class="mod-card-top">
+            <span class="mod-icon"><i class="fa-solid fa-brain"></i></span>
+            <span class="mod-tag">PSICOTÉCNICO</span>
+          </div>
+          <h3>Desmistificando o Exame Psicológico</h3>
+          <p>Orientações práticas e exemplos de exercícios de atenção, memória e raciocínio para chegar tranquilo.</p>
+          <div class="mod-footer">
+            <span><i class="fa-regular fa-clock"></i> Treino mental</span>
+            <span class="status-pill"><i class="fa-solid fa-check"></i> Incluso</span>
+          </div>
+        </article>
+
+        <!-- Módulo 4 (Destaque) -->
+        <article class="mod-card featured-mod" style="--mc:#e11d48">
+          <div class="mod-card-top">
+            <span class="mod-icon"><i class="fa-solid fa-clipboard-check"></i></span>
+            <span class="mod-tag" style="background:#ffe4e6;color:#be123c">DIFERENCIAL · +40 PROVAS</span>
+          </div>
+          <h3>Simulados Oficiais Detran</h3>
+          <p>Mais de 40 simulados completos com cronômetro de 60 min e tela parecida com a que você terá no dia da prova.</p>
+          <div class="mod-footer">
+            <span><i class="fa-solid fa-star" style="color:#f59e0b"></i> Modo Prova Real</span>
+            <span class="status-pill"><i class="fa-solid fa-check"></i> Incluso</span>
+          </div>
+        </article>
+
+        <!-- Módulo 5 -->
+        <article class="mod-card" style="--mc:#059669">
+          <div class="mod-card-top">
+            <span class="mod-icon"><i class="fa-solid fa-car"></i></span>
+            <span class="mod-tag">ETAPA FINAL</span>
+          </div>
+          <h3>Preparação para a Prova Prática</h3>
+          <p>Orientações sobre percurso, comandos do examinador, controle do veículo e faltas mais comuns para evitar.</p>
+          <div class="mod-footer">
+            <span><i class="fa-solid fa-car-side"></i> Carro e Moto</span>
+            <span class="status-pill"><i class="fa-solid fa-check"></i> Incluso</span>
+          </div>
+        </article>
+
+        <!-- Módulo 6 -->
+        <article class="mod-card" style="--mc:#2563eb">
+          <div class="mod-card-top">
+            <span class="mod-icon"><i class="fa-solid fa-circle-question"></i></span>
+            <span class="mod-tag">SUPORTE & FAQ</span>
+          </div>
+          <h3>Central de Dúvidas Frequentes</h3>
+          <p>Respostas rápidas e diretas sobre prazos, taxas do Detran, documentos necessários e reagendamentos.</p>
+          <div class="mod-footer">
+            <span><i class="fa-regular fa-comments"></i> Consulta rápida</span>
+            <span class="status-pill"><i class="fa-solid fa-check"></i> Incluso</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. COMPARATIVO: ESTUDAR SOZINHO VS PLATAFORMA -->
+  <section class="section" style="padding-top: 10px;">
+    <div class="mobile-wrap">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-scale-balanced"></i> Compare e Decida</span>
+        <h2>O jeito antigo vs. Plataforma Instrutor Micael Lucas</h2>
+      </div>
+
+      <div class="compare-box">
+        <div class="compare-col bad">
+          <div class="compare-title">
+            <i class="fa-solid fa-circle-xmark"></i> Estudar Sem Direção (Jeito Comum)
+          </div>
+          <ul class="compare-list">
+            <li><i class="fa-solid fa-xmark"></i> Apostilas gigantes e cansativas que dão sono em 10 minutos.</li>
+            <li><i class="fa-solid fa-xmark"></i> Chega no dia da prova sem nunca ter treinado no sistema com cronômetro.</li>
+            <li><i class="fa-solid fa-xmark"></i> Fica perdido sem saber qual o próximo passo no Detran.</li>
+            <li><i class="fa-solid fa-xmark"></i> Risco alto de reprovar e pagar taxas extras de reteste e esperar semanas.</li>
+          </ul>
+        </div>
+
+        <div class="compare-col good">
+          <div class="compare-title">
+            <i class="fa-solid fa-circle-check"></i> Com a Plataforma Micael Lucas
+          </div>
+          <ul class="compare-list">
+            <li><i class="fa-solid fa-check"></i> <strong>+40 Simulados Completos</strong> idênticos à experiência do dia da prova.</li>
+            <li><i class="fa-solid fa-check"></i> <strong>Videoaulas + Resumos Visuais</strong> direto no seu celular, no seu ritmo.</li>
+            <li><i class="fa-solid fa-check"></i> <strong>Passo a passo completo</strong> desde o aplicativo CNH Digital até pegar a carteira.</li>
+            <li><i class="fa-solid fa-check"></i> Você descobre seus pontos fracos antes da prova e chega 100% confiante!</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. DEPOIMENTOS -->
+  <section class="section" style="padding-top: 8px;">
+    <div class="mobile-wrap">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-comments"></i> Alunos Aprovados</span>
+        <h2>Quem treinou nos simulados chegou pronto no dia da prova</h2>
+      </div>
+
+      <div class="testimonials-stack">
+        <div class="testi-card">
+          <div class="testi-top">
+            <div class="testi-user">
+              <div class="testi-avatar">L</div>
+              <div class="testi-name">
+                <strong>Lucas Almeida</strong>
+                <span><i class="fa-solid fa-circle-check"></i> Aprovado com 28/30 pontos</span>
+              </div>
+            </div>
+            <div class="testi-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <p class="testi-text">"O que mais me ajudou foram os simulados com cronômetro. Quando sentei pra fazer a prova oficial parecia que eu já estava em casa fazendo mais um treino na plataforma do Micael!"</p>
+        </div>
+
+        <div class="testi-card">
+          <div class="testi-top">
+            <div class="testi-user">
+              <div class="testi-avatar" style="background:#059669;color:#fff">C</div>
+              <div class="testi-name">
+                <strong>Camila Santos</strong>
+                <span><i class="fa-solid fa-circle-check"></i> Aprovada de Primeira</span>
+              </div>
+            </div>
+            <div class="testi-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <p class="testi-text">"Eu estava super perdida sobre o que fazer primeiro no Detran e morria de medo do psicotécnico e da teórica. O guia passo a passo e as videoaulas salvaram demais!"</p>
+        </div>
+
+        <div class="testi-card">
+          <div class="testi-top">
+            <div class="testi-user">
+              <div class="testi-avatar" style="background:#2563eb;color:#fff">R</div>
+              <div class="testi-name">
+                <strong>Rafael Oliveira</strong>
+                <span><i class="fa-solid fa-circle-check"></i> Aprovado com 27/30 pontos</span>
+              </div>
+            </div>
+            <div class="testi-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <p class="testi-text">"Fiz mais de 20 simulados pelo celular no ônibus indo pro trabalho. Cheguei na prova tranquilo, terminei em 25 minutos e passei de primeira."</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. SEÇÃO DE OFERTA -->
+  <section class="section" id="oferta" style="padding-top: 12px;">
+    <div class="mobile-wrap">
+      <div class="offer-card">
+        <span class="offer-top-ribbon">🔥 OFERTA DE BLACK FRIDAY</span>
+
+        <h2 class="offer-title">Plataforma Instrutor Micael Lucas</h2>
+        <p class="offer-sub">Estude pelo celular, tablet ou computador no seu ritmo</p>
+
+        <div class="offer-checklist">
+          <div class="offer-check-item">
+            <i class="fa-solid fa-circle-check"></i>
+            <span><strong>+40 Simulados Completos:</strong> Sistema parecido com o dia da prova oficial (30 questões + cronômetro 60 min).</span>
+          </div>
+          <div class="offer-check-item">
+            <i class="fa-solid fa-circle-check"></i>
+            <span><strong>Videoaulas Completas:</strong> Assista às aulas passo a passo dentro da plataforma.</span>
+          </div>
+          <div class="offer-check-item">
+            <i class="fa-solid fa-circle-check"></i>
+            <span><strong>Guia Definitivo da CNH:</strong> O passo a passo completo do zero até a habilitação na mão.</span>
+          </div>
+          <div class="offer-check-item">
+            <i class="fa-solid fa-circle-check"></i>
+            <span><strong>Apostila Digital nas 6 Matérias:</strong> Com quadros visuais de revisão e dicas de prova.</span>
+          </div>
+          <div class="offer-check-item">
+            <i class="fa-solid fa-circle-check"></i>
+            <span><strong>Módulos Extras:</strong> Psicotécnico, Preparação para Prova Prática e Central de Dúvidas.</span>
+          </div>
+        </div>
+
+        <div class="price-box">
+          <p class="price-old">De R$ 147,00 por apenas</p>
+          <div class="price-main">
+            R$ 67,00
+          </div>
+          <p class="price-cash">Valor promocional de <strong>Black Friday</strong> · PIX ou Cartão</p>
+        </div>
+
+        <a href="https://pay.hotmart.com/Y108423909U?off=r0pfn28r" class="btn-cta gold-cta" id="btn-comprar-principal" target="_blank" rel="noopener noreferrer">
+          <span>LIBERAR MEU ACESSO AGORA</span>
+          <i class="fa-solid fa-lock-open"></i>
+        </a>
+
+        <div class="cta-micro-trust" style="margin-top: 12px;">
+          <span><i class="fa-brands fa-pix"></i> PIX Imediato</span>
+          <span><i class="fa-regular fa-credit-card"></i> Cartão</span>
+          <span><i class="fa-brands fa-whatsapp"></i> Acesso no E-mail e WhatsApp</span>
+        </div>
+
+        <div class="guarantee-strip">
+          <i class="fa-solid fa-award"></i>
+          <div>
+            <strong>Garantia Incondicional de 7 Dias</strong>
+            <span>Entre na plataforma, teste os simulados e assista às aulas. Se não gostar, devolvemos 100% do seu dinheiro sem burocracia.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. FAQ (PERGUNTAS FREQUENTES) -->
+  <section class="section" style="padding-top: 10px;">
+    <div class="mobile-wrap">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-circle-question"></i> Tire suas Dúvidas</span>
+        <h2>Perguntas Frequentes</h2>
+      </div>
+
+      <div class="faq-list">
+        <details class="faq-item" open>
+          <summary>
+            <span>Como funcionam os mais de 40 simulados?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </summary>
+          <div class="faq-body">
+            Você terá acesso a simulados completos no Modo Prova Real (30 questões sorteadas, cronômetro de 60 minutos, grade de navegação e meta de 21 acertos) e também simulados separados por matéria (Legislação, Sinalização, Direção Defensiva, Primeiros Socorros, Meio Ambiente e Mecânica), com gabarito na hora!
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>
+            <span>Consigo estudar e fazer os simulados pelo celular?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </summary>
+          <div class="faq-body">
+            Sim! A plataforma do Instrutor Micael Lucas foi desenhada especialmente para funcionar perfeitamente no celular (Android e iPhone), além de tablet e computador, sem precisar instalar nada pesado.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>
+            <span>Tem videoaulas e explicação de como tirar a CNH?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </summary>
+          <div class="faq-body">
+            Sim! Além dos mais de 40 simulados e da apostila digital interativa, você tem o módulo de Videoaulas completas e o Guia Definitivo da CNH, que explica passo a passo todas as 7 etapas para tirar sua carteira.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>
+            <span>Como recebo meu acesso após o pagamento?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </summary>
+          <div class="faq-body">
+            Assim que o pagamento é confirmado (no PIX ou Cartão é imediato), você recebe seus dados de acesso diretamente no seu e-mail e no seu WhatsApp para entrar na plataforma na mesma hora.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>
+            <span>Posso repetir os simulados quantas vezes eu quiser?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </summary>
+          <div class="faq-body">
+            Pode sim! Você pode refazer todos os simulados quantas vezes quiser até atingir 28, 29 ou 30 pontos com tranquilidade e chegar afiado no dia do exame oficial.
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11. RODAPÉ -->
+  <footer class="footer">
+    <div class="mobile-wrap">
+      <p><strong>Plataforma de Estudos · Instrutor Autônomo Micael Lucas</strong></p>
+      <p style="margin-top: 6px;">Conteúdo de apoio à formação de condutores · Consulte sempre a legislação atualizada.</p>
+      <p style="margin-top: 8px; opacity: 0.75;">© 2026 Todos os direitos reservados · Termos de Uso · Política de Privacidade</p>
+    </div>
+  </footer>
+
+  <!-- SCRIPTS INTERATIVOS -->
+  <script>
+    // 1. Troca de abas do Preview da Plataforma no Hero
+    var previewImages = [
+      'assets/print-hero.jpg',
+      'assets/print-modulos-1.jpg',
+      'assets/print-modulos-2.png'
+    ];
+
+    function switchPreview(index, btn) {
+      var img = document.getElementById('preview-img');
+      if (img && previewImages[index]) {
+        img.src = previewImages[index];
+      }
+      var tabs = document.querySelectorAll('.frame-tab');
+      tabs.forEach(function(t) { t.classList.remove('active'); });
+      if (btn) btn.classList.add('active');
+    }
+
+    // 2. Demo interativo de questão do simulado
+    function answerDemo(btn, isCorrect) {
+      var allBtns = document.querySelectorAll('#demo-options .live-op-btn');
+      allBtns.forEach(function(b) {
+        b.classList.remove('correct', 'wrong');
+      });
+
+      var feedback = document.getElementById('demo-feedback');
+      if (isCorrect) {
+        btn.classList.add('correct');
+        feedback.className = 'live-feedback show ok';
+        feedback.innerHTML = '<i class="fa-solid fa-circle-check"></i> <strong>Resposta Correta!</strong> Ao ser aprovado, você recebe a PPD por 1 ano. Na plataforma você tem +40 simulados completos assim para treinar!';
+      } else {
+        btn.classList.add('wrong');
+        allBtns[1].classList.add('correct');
+        feedback.className = 'live-feedback show nok';
+        feedback.innerHTML = '<i class="fa-solid fa-circle-exclamation"></i> <strong>Quase lá!</strong> A alternativa correta é a <strong>B (PPD válida por 1 ano)</strong>. Nos simulados da plataforma você vê o gabarito revisado na hora para não errar no dia da prova!';
+      }
+    }
+
+    // 3. Cronômetro regressivo demonstrativo do Simulado
+    (function() {
+      var totalSec = 59 * 60 + 42;
+      var timerEl = document.getElementById('demo-timer');
+      if (!timerEl) return;
+      setInterval(function() {
+        if (totalSec > 0) totalSec--;
+        var m = String(Math.floor(totalSec / 60)).padStart(2, '0');
+        var s = String(totalSec % 60).padStart(2, '0');
+        timerEl.textContent = m + ':' + s;
+      }, 1000);
+    })();
+  </script>
+</body>
+</html>
+

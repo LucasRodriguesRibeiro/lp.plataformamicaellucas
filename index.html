@@ -1,36 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>Plataforma de Estudos | Instrutor Micael Lucas — +40 Simulados Completos</title>
-  <meta name="description" content="Plataforma de estudos com mais de 40 simulados completos no sistema parecido com o dia da prova do Detran, videoaulas e passo a passo de como tirar sua CNH.">
+  <meta name="description"
+    content="Plataforma de estudos com mais de 40 simulados completos no sistema parecido com o dia da prova do Detran, videoaulas e passo a passo de como tirar sua CNH.">
   <link rel="icon" type="image/jpeg" href="logomicaellucas.jpeg">
   <link rel="apple-touch-icon" href="logomicaellucas.jpeg">
 
   <!-- Google Fonts: Montserrat & Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@600;700;800;900&display=swap"
+    rel="stylesheet">
   <!-- Font Awesome 6 -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 
   <!-- Meta Pixel Code -->
   <script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '1643489514191549');
-  fbq('track', 'PageView');
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1643489514191549');
+    fbq('track', 'PageView');
   </script>
   <noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=1643489514191549&ev=PageView&noscript=1"
-  /></noscript>
+      src="https://www.facebook.com/tr?id=1643489514191549&ev=PageView&noscript=1" /></noscript>
   <!-- End Meta Pixel Code -->
 
   <style>
@@ -72,7 +78,10 @@
       overflow-x: hidden;
     }
 
-    h1, h2, h3, h4 {
+    h1,
+    h2,
+    h3,
+    h4 {
       font-family: 'Montserrat', sans-serif;
       line-height: 1.16;
       letter-spacing: -0.02em;
@@ -231,11 +240,11 @@
     }
 
     .hero h1 {
-      font-size: clamp(26px, 7.2vw, 38px);
+      font-size: clamp(19.5px, 5.2vw, 29px);
       font-weight: 900;
       color: #ffffff;
-      margin-bottom: 12px;
-      line-height: 1.14;
+      margin-bottom: 10px;
+      line-height: 1.2;
     }
 
     .hero h1 .gold {
@@ -252,9 +261,9 @@
 
     .hero-sub {
       color: #c5d2e6;
-      font-size: 14.5px;
-      line-height: 1.55;
-      margin: 0 auto 20px;
+      font-size: 13.5px;
+      line-height: 1.5;
+      margin: 0 auto 18px;
       max-width: 480px;
     }
 
@@ -296,96 +305,63 @@
       line-height: 1.2;
     }
 
-    /* Mockup de Notebook na Dobra Principal (Hero) */
-    .laptop-mockup-wrap {
-      margin: 4px auto 24px;
+    /* Área de Vídeo na Dobra Principal (Hero VSL) */
+    .hero-video-wrap {
       width: 100%;
+      margin: 4px auto 22px;
+    }
+
+    .hero-video-frame {
       position: relative;
-      padding: 0 4px;
-    }
-
-    .laptop-screen {
-      background: #0b111e;
-      border: 2px solid #334155;
-      border-bottom: none;
-      border-radius: 14px 14px 0 0;
-      padding: 12px 8px 8px;
-      position: relative;
-      width: 94%;
-      margin: 0 auto;
-      box-shadow:
-        0 20px 45px rgba(0, 0, 0, 0.55),
-        0 0 32px rgba(247, 189, 47, 0.16);
-    }
-
-    /* Câmera da borda superior do notebook */
-    .laptop-camera {
-      width: 6px;
-      height: 6px;
-      border-radius: 50%;
-      background: #1e293b;
-      border: 1px solid #475569;
-      margin: 0 auto 6px;
-      position: relative;
-    }
-
-    .laptop-camera::after {
-      content: '';
-      position: absolute;
-      top: 1px;
-      left: 1px;
-      width: 2px;
-      height: 2px;
-      border-radius: 50%;
-      background: #38bdf8;
-    }
-
-    .laptop-display {
-      border-radius: 6px;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      background: linear-gradient(145deg, #071326 0%, #0e2344 100%);
+      border: 2px solid rgba(247, 189, 47, 0.55);
+      border-radius: 16px;
       overflow: hidden;
-      background: #07172f;
-      border: 1px solid rgba(255, 255, 255, 0.08);
-    }
-
-    .laptop-display img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-
-    /* Base metálica do notebook */
-    .laptop-base {
-      width: 100%;
-      height: 14px;
-      background: linear-gradient(180deg, #cbd5e1 0%, #94a3b8 55%, #475569 100%);
-      border-radius: 2px 2px 12px 12px;
-      position: relative;
-      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
-    }
-
-    /* Entalhe central de abrir o notebook */
-    .laptop-notch {
-      width: 58px;
-      height: 5px;
-      background: #475569;
-      border-radius: 0 0 6px 6px;
-      margin: 0 auto;
-      box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.45);
-    }
-
-    .laptop-caption {
-      margin-top: 10px;
-      font-size: 11.5px;
-      color: #cbd5e1;
-      font-weight: 600;
+      box-shadow:
+        0 18px 42px rgba(0, 0, 0, 0.55),
+        0 0 28px rgba(247, 189, 47, 0.16);
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
-      gap: 6px;
+      gap: 10px;
+      padding: 20px;
     }
 
-    .laptop-caption i {
-      color: var(--gold);
+    .hero-video-frame iframe,
+    .hero-video-frame video {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+      object-fit: cover;
+    }
+
+    .video-placeholder-play {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background: var(--gold);
+      color: var(--navy);
+      display: grid;
+      place-items: center;
+      font-size: 24px;
+      box-shadow: 0 0 0 10px rgba(247, 189, 47, 0.18), 0 8px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    .video-placeholder-play i {
+      margin-left: 3px;
+    }
+
+    .video-placeholder-text {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 12.5px;
+      font-weight: 700;
+      color: #cbd5e1;
+      letter-spacing: 0.02em;
     }
 
     /* Botão CTA Principal */
@@ -421,8 +397,15 @@
     }
 
     @keyframes ctaPulse {
-      0%, 100% { box-shadow: 0 10px 25px rgba(5, 150, 105, 0.42), 0 0 0 0 rgba(16, 185, 129, 0.45); }
-      50% { box-shadow: 0 10px 30px rgba(5, 150, 105, 0.6), 0 0 0 8px rgba(16, 185, 129, 0); }
+
+      0%,
+      100% {
+        box-shadow: 0 10px 25px rgba(5, 150, 105, 0.42), 0 0 0 0 rgba(16, 185, 129, 0.45);
+      }
+
+      50% {
+        box-shadow: 0 10px 30px rgba(5, 150, 105, 0.6), 0 0 0 8px rgba(16, 185, 129, 0);
+      }
     }
 
     .cta-micro-trust {
@@ -1012,8 +995,13 @@
       gap: 8px;
     }
 
-    .compare-col.bad .compare-title { color: #be123c; }
-    .compare-col.good .compare-title { color: #047857; }
+    .compare-col.bad .compare-title {
+      color: #be123c;
+    }
+
+    .compare-col.good .compare-title {
+      color: #047857;
+    }
 
     .compare-list {
       list-style: none;
@@ -1036,8 +1024,13 @@
       flex-shrink: 0;
     }
 
-    .compare-col.bad .compare-list li i { color: #e11d48; }
-    .compare-col.good .compare-list li i { color: #059669; }
+    .compare-col.bad .compare-list li i {
+      color: #e11d48;
+    }
+
+    .compare-col.good .compare-list li i {
+      color: #059669;
+    }
 
     /* ==========================================
        PROVA SOCIAL / DEPOIMENTOS DE ALUNOS
@@ -1183,40 +1176,107 @@
       color: var(--gold);
     }
 
+    .offer-access-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(16, 185, 129, 0.14);
+      border: 1px solid rgba(16, 185, 129, 0.4);
+      color: #6ee7b7;
+      font-size: 11.5px;
+      font-weight: 700;
+      padding: 5px 12px;
+      border-radius: 99px;
+      margin-bottom: 16px;
+    }
+
+    .retest-anchor-box {
+      background: rgba(225, 29, 72, 0.12);
+      border: 1px solid rgba(251, 113, 133, 0.35);
+      border-radius: 14px;
+      padding: 13px 14px;
+      margin-bottom: 16px;
+      text-align: left;
+    }
+
+    .retest-anchor-title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 12px;
+      font-weight: 800;
+      color: #fda4af;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-bottom: 5px;
+    }
+
+    .retest-anchor-text {
+      font-size: 12.5px;
+      color: #f1f5f9;
+      line-height: 1.45;
+    }
+
+    .retest-anchor-text strong {
+      color: var(--gold);
+    }
+
     .price-box {
-      background: rgba(7, 23, 47, 0.65);
-      border: 1px solid rgba(247, 189, 47, 0.35);
+      background: rgba(7, 23, 47, 0.72);
+      border: 1.5px solid rgba(247, 189, 47, 0.45);
       border-radius: 16px;
-      padding: 16px 14px;
+      padding: 18px 14px;
       margin-bottom: 18px;
     }
 
     .price-old {
-      font-size: 13px;
+      font-size: 12.5px;
       color: #94a3b8;
-      text-decoration: line-through;
       font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .price-old s {
+      color: #f87171;
     }
 
     .price-main {
       font-family: 'Montserrat', sans-serif;
-      font-size: 38px;
+      font-size: 40px;
       font-weight: 900;
       color: var(--gold);
       line-height: 1.05;
-      margin: 4px 0;
+      margin: 6px 0;
     }
 
     .price-main small {
-      font-size: 16px;
-      font-weight: 700;
+      font-size: 18px;
+      font-weight: 800;
       color: #ffffff;
     }
 
     .price-cash {
-      font-size: 13.5px;
-      color: #e2e8f0;
-      font-weight: 600;
+      font-size: 14.5px;
+      color: #ffffff;
+      font-weight: 700;
+      margin-top: 4px;
+    }
+
+    .price-cash span {
+      color: #6ee7b7;
+      font-weight: 800;
+    }
+
+    .price-daily-note {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 4px 10px;
+      border-radius: 99px;
+      background: rgba(247, 189, 47, 0.13);
+      color: var(--gold);
+      font-size: 11px;
+      font-weight: 700;
     }
 
     .guarantee-strip {
@@ -1377,66 +1437,460 @@
       gap: 6px;
       box-shadow: 0 4px 14px rgba(16, 185, 129, 0.35);
     }
+
+    /* ==========================================
+       2ª DOBRA: 3 LINHAS DE CARROSSEL AUTOMÁTICO
+       ========================================== */
+    .aprovados-section {
+      padding: 32px 0 30px;
+      background: linear-gradient(180deg, #07172f 0%, #0d2346 100%);
+      color: #ffffff;
+      border-bottom: 1px solid rgba(247, 189, 47, 0.28);
+      overflow: hidden;
+    }
+
+    .aprovados-header {
+      text-align: center;
+      margin-bottom: 22px;
+    }
+
+    .aprovados-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 12px;
+      border-radius: 999px;
+      background: rgba(247, 189, 47, 0.14);
+      border: 1px solid rgba(247, 189, 47, 0.42);
+      color: var(--gold);
+      font-family: 'Montserrat', sans-serif;
+      font-size: 10.5px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 10px;
+    }
+
+    .aprovados-header h2 {
+      font-size: clamp(22px, 6vw, 30px);
+      font-weight: 900;
+      color: #ffffff;
+      line-height: 1.18;
+      margin-bottom: 8px;
+    }
+
+    .aprovados-header h2 span {
+      color: var(--gold);
+    }
+
+    .aprovados-header p {
+      font-size: 13.5px;
+      color: #cbd5e1;
+      max-width: 460px;
+      margin: 0 auto;
+      line-height: 1.5;
+    }
+
+    .aprovados-rows {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      width: 100%;
+    }
+
+    .aprovados-marquee {
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .aprovados-marquee-track {
+      display: flex;
+      width: max-content;
+      will-change: transform;
+    }
+
+    .aprovados-marquee-group {
+      display: flex;
+      gap: 10px;
+      padding-right: 10px;
+      flex-shrink: 0;
+    }
+
+    .aprovados-marquee-track.dir-left {
+      animation: marqueeLeft 38s linear infinite;
+    }
+
+    .aprovados-marquee-track.dir-right {
+      animation: marqueeRight 42s linear infinite;
+    }
+
+    .aprovados-marquee-track.dir-left-slow {
+      animation: marqueeLeft 46s linear infinite;
+    }
+
+    @keyframes marqueeLeft {
+      0% {
+        transform: translate3d(0, 0, 0);
+      }
+
+      100% {
+        transform: translate3d(-50%, 0, 0);
+      }
+    }
+
+    @keyframes marqueeRight {
+      0% {
+        transform: translate3d(-50%, 0, 0);
+      }
+
+      100% {
+        transform: translate3d(0, 0, 0);
+      }
+    }
+
+    .aprovado-card {
+      width: 170px;
+      flex: 0 0 170px;
+      border-radius: 13px;
+      overflow: hidden;
+      border: 1.5px solid rgba(247, 189, 47, 0.55);
+      background: #061326;
+      box-shadow: 0 10px 22px rgba(0, 0, 0, 0.4);
+    }
+
+    @media (min-width: 540px) {
+      .aprovado-card {
+        width: 210px;
+        flex: 0 0 210px;
+      }
+    }
+
+    .aprovado-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+    }
+
+    .hero-top-logo {
+      max-width: 245px;
+      width: 68%;
+      height: auto;
+      margin: 0 auto 18px;
+      display: block;
+      filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.35));
+    }
+
+    /* ==========================================
+       SEÇÃO SOBRE MIM: INSTRUTOR MICAEL LUCAS
+       ========================================== */
+    .about-card {
+      background: linear-gradient(160deg, #07172f 0%, #0d254c 100%);
+      border: 2px solid rgba(247, 189, 47, 0.45);
+      border-radius: 22px;
+      overflow: hidden;
+      color: #ffffff;
+      box-shadow: 0 18px 42px rgba(7, 23, 47, 0.22);
+    }
+
+    .about-photo-wrap {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      background: #061326;
+    }
+
+    .about-photo-wrap img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .about-photo-Wrap-gradient {
+      position: absolute;
+      inset: auto 0 0 0;
+      height: 110px;
+      background: linear-gradient(180deg, transparent 0%, #07172f 100%);
+      pointer-events: none;
+    }
+
+    .about-credential-badge {
+      position: absolute;
+      top: 14px;
+      left: 14px;
+      background: rgba(7, 23, 47, 0.88);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(247, 189, 47, 0.6);
+      color: var(--gold);
+      font-family: 'Montserrat', sans-serif;
+      font-size: 10.5px;
+      font-weight: 800;
+      padding: 6px 12px;
+      border-radius: 999px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .about-body {
+      padding: 18px 18px 22px;
+    }
+
+    .about-kicker {
+      color: var(--gold);
+      font-family: 'Montserrat', sans-serif;
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .about-title {
+      font-size: 23px;
+      font-weight: 900;
+      color: #ffffff;
+      margin-bottom: 12px;
+    }
+
+    .about-text {
+      font-size: 13.5px;
+      color: #cbd5e1;
+      line-height: 1.58;
+      margin-bottom: 12px;
+    }
+
+    .about-text strong {
+      color: #ffffff;
+    }
+
+    .about-highlights {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 8px;
+      margin: 14px 0 16px;
+    }
+
+    .about-hl-item {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 11px;
+      padding: 10px;
+      font-size: 12px;
+      font-weight: 700;
+      color: #f1f5f9;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .about-hl-item i {
+      color: var(--gold);
+      font-size: 15px;
+      flex-shrink: 0;
+    }
+
+    .btn-instagram {
+      width: 100%;
+      padding: 13px 16px;
+      border-radius: 12px;
+      background: linear-gradient(90deg, #833ab4 0%, #fd1d1d 50%, #fcb045 100%);
+      color: #ffffff;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 13px;
+      font-weight: 800;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      box-shadow: 0 8px 20px rgba(253, 29, 29, 0.25);
+      transition: transform 0.18s ease;
+    }
+
+    .btn-instagram:active {
+      transform: scale(0.98);
+    }
   </style>
 </head>
+
 <body>
 
-  <!-- 1. HERO: Promessa Principal + Preview Real da Plataforma -->
+  <!-- 1. HERO: Logo Transparente + Título + Subtítulo + Área de Vídeo -->
   <section class="hero" id="inicio">
     <div class="mobile-wrap hero-center">
-      <span class="eyebrow-pill">
-        <i class="fa-solid fa-graduation-cap"></i> Plataforma Teórica de Apoio
-      </span>
+      <img src="assets/logo-transparente.png" alt="Instrutor Autônomo Micael Lucas" class="hero-top-logo">
 
       <h1>
-        A Plataforma de Estudos com <span class="underline-gold">Mais de 40 Simulados Completos</span> para a CNH
+        Passe na prova do Detran estudando poucos minutos por dia com <span class="underline-gold">mais de 40 simulados</span> treinando você na tela real do exame
       </h1>
 
       <p class="hero-sub">
-        Treine em um <strong>sistema parecido com o que você vai ter no dia da prova oficial</strong>, assista às videoaulas e siga o passo a passo completo para chegar pronto e passar de primeira.
+        O passo a passo que centenas de alunos usaram pra sair do zero até a CNH, <strong>sem decorar apostilas gigantes e mesmo que você fique nervoso na hora da prova.</strong>
       </p>
 
-      <!-- 3 Métricas Rápidas -->
-      <div class="hero-Highlights">
-        <div class="hero-stat-box">
-          <strong>+40</strong>
-          <span>Simulados no Modo Prova</span>
-        </div>
-        <div class="hero-stat-box">
-          <strong>+1.100</strong>
-          <span>Questões do Detran</span>
-        </div>
-        <div class="hero-stat-box">
-          <strong>6 Módulos</strong>
-          <span>Videoaulas + Passo a Passo</span>
+      <!-- Área de Vídeo (Substituir pelo iframe/vídeo quando estiver pronto) -->
+      <div class="hero-video-wrap" id="area-video" style="margin-bottom: 0;">
+        <div class="hero-video-frame">
+          <div class="video-placeholder-play">
+            <i class="fa-solid fa-play"></i>
+          </div>
+          <span class="video-placeholder-text">Área reservada para o vídeo de apresentação</span>
         </div>
       </div>
+    </div>
+  </section>
 
-      <!-- Mockup de Notebook com o Simulado Oficial -->
-      <div class="laptop-mockup-wrap">
-        <div class="laptop-screen">
-          <div class="laptop-camera"></div>
-          <div class="laptop-display">
-            <img src="assets/print-simulado.jpg" alt="Simulado Completo Modo Prova Real na Plataforma do Instrutor Micael Lucas">
+  <!-- 2. SEGUNDA DOBRA: ALUNOS APROVADOS 100% (3 LINHAS DE CARROSSEL AUTOMÁTICO) -->
+  <section class="aprovados-section" id="aprovados">
+    <div class="mobile-wrap">
+      <div class="aprovados-header">
+        <h2>Veja quem seguiu o método e foi <span>100% Aprovado no Detran!</span></h2>
+        <p>Alunos do Instrutor Micael Lucas que destravaram o medo da prova e conquistaram a CNH sem gastar com reteste:
+        </p>
+      </div>
+    </div>
+
+    <div class="aprovados-rows">
+      <!-- Linha 1: Ordem A (01..12 + cópia idêntica para loop infinito sem fim) -->
+      <div class="aprovados-marquee">
+        <div class="aprovados-marquee-track dir-left">
+          <div class="aprovados-marquee-group">
+            <div class="aprovado-card"><img src="assets/aprovados/aprovado-01.jpg" alt="Alunos Aprovados 100% - 01">
+            </div>
+            <div class="aprovado-card"><img src="assets/aprovados/aprovado-02.jpg" alt="Alunos Aprovados 100% - 02">
+            </div>
+            <div class="aprovado-card"><img src="assets/aprovados/aprovado-03.jpg" alt="Alunos Aprovados 100% - 03">
+            </div>
+            <div class="aprovado-card"><img src="assets/aprovados/aprovado-04.jpg" alt="Alunos Aprovados 100% - 04">
+            </div>
+            <div class="aprovado-card"><img src="assets/aprovados/aprovado-05.jpg" alt="Alunos Aprovados 100% - 05">
+            </div>
+            <div class="aprovado-card"><img src="assets/aprovados/aprovado-06.jpg" alt="Alunos Aprovados 100% - 06">
+            </div>
+            <div class="aprovado-card"><img src="assets/aprovados/aprovado-07.jpg" alt="Alunos Aprovados 100% - 07">
+            </div>
+            <div class="aprovado-card"><img src="assets/aprovados/aprovado-08.jpg" alt="Alunos Aprovados 100% - 08">
+            </div>
+            <div class="aprovado-card"><img src="assets/aprovados/aprovado-09.jpg" alt="Alunos Aprovados 100% - 09">
+            </div>
+            <div class="aprovado-card"><img src="assets/aprovados/aprovado-10.jpg" alt="Alunos Aprovados 100% - 10">
+            </div>
+            <div class="aprovado-card"><img src="assets/aprovados/aprovado-11.jpg" alt="Alunos Aprovados 100% - 11">
+            </div>
+            <div class="aprovado-card"><img src="assets/aprovados/aprovado-12.jpg" alt="Alunos Aprovados 100% - 12">
+            </div>
+          </div>
+          <div class="aprovados-marquee-group" aria-hidden="true">
+            <div class="aprovado-card"><img src="assets/aprovados/aprovado-01.jpg" alt=""></div>
+            <div class="aprovado-card"><img src="assets/aprovados/aprovado-02.jpg" alt=""></div>
+            <div class="aprovado-card"><img src="assets/aprovados/aprovado-03.jpg" alt=""></div>
+            <div class="aprovado-card"><img src="assets/aprovados/aprovado-04.jpg" alt=""></div>
+            <div class="aprovado-card"><img src="assets/aprovados/aprovado-05.jpg" alt=""></div>
+            <div class="aprovado-card"><img src="assets/aprovados/aprovado-06.jpg" alt=""></div>
+            <div class="aprovado-card"><img src="assets/aprovados/aprovado-07.jpg" alt=""></div>
+            <div class="aprovado-card"><img src="assets/aprovados/aprovado-08.jpg" alt=""></div>
+            <div class="aprovado-card"><img src="assets/aprovados/aprovado-09.jpg" alt=""></div>
+            <div class="aprovado-card"><img src="assets/aprovados/aprovado-10.jpg" alt=""></div>
+            <div class="aprovado-card"><img src="assets/aprovados/aprovado-11.jpg" alt=""></div>
+            <div class="aprovado-card"><img src="assets/aprovados/aprovado-12.jpg" alt=""></div>
           </div>
         </div>
-        <div class="laptop-base">
-          <div class="laptop-notch"></div>
-        </div>
-        <div class="laptop-caption">
-          <i class="fa-solid fa-laptop-file"></i> Visão real do Simulado com o mesmo estilo do dia da prova
+      </div>
+
+      <!-- Linha 2: Ordem B diferente (05..12, 01..04 + cópia idêntica para loop infinito) -->
+      <div class="aprovados-marquee">
+        <div class="aprovados-marquee-track dir-right">
+          <div class="aprovados-marquee-group">
+            <div class="aprovado-card"><img src="assets/aprovados/aprovado-05.jpg" alt="Alunos Aprovados 100% - 05">
+            </div>
+            <div class="aprovado-card"><img src="assets/aprovados/aprovado-08.jpg" alt="Alunos Aprovados 100% - 08">
+            </div>
+            <div class="aprovado-card"><img src="assets/aprovados/aprovado-11.jpg" alt="Alunos Aprovados 100% - 11">
+            </div>
+            <div class="aprovado-card"><img src="assets/aprovados/aprovado-02.jpg" alt="Alunos Aprovados 100% - 02">
+            </div>
+            <div class="aprovado-card"><img src="assets/aprovados/aprovado-06.jpg" alt="Alunos Aprovados 100% - 06">
+            </div>
+            <div class="aprovado-card"><img src="assets/aprovados/aprovado-09.jpg" alt="Alunos Aprovados 100% - 09">
+            </div>
+            <div class="aprovado-card"><img src="assets/aprovados/aprovado-12.jpg" alt="Alunos Aprovados 100% - 12">
+            </div>
+            <div class="aprovado-card"><img src="assets/aprovados/aprovado-03.jpg" alt="Alunos Aprovados 100% - 03">
+            </div>
+            <div class="aprovado-card"><img src="assets/aprovados/aprovado-07.jpg" alt="Alunos Aprovados 100% - 07">
+            </div>
+            <div class="aprovado-card"><img src="assets/aprovados/aprovado-10.jpg" alt="Alunos Aprovados 100% - 10">
+            </div>
+            <div class="aprovado-card"><img src="assets/aprovados/aprovado-01.jpg" alt="Alunos Aprovados 100% - 01">
+            </div>
+            <div class="aprovado-card"><img src="assets/aprovados/aprovado-04.jpg" alt="Alunos Aprovados 100% - 04">
+            </div>
+          </div>
+          <div class="aprovados-marquee-group" aria-hidden="true">
+            <div class="aprovado-card"><img src="assets/aprovados/aprovado-05.jpg" alt=""></div>
+            <div class="aprovado-card"><img src="assets/aprovados/aprovado-08.jpg" alt=""></div>
+            <div class="aprovado-card"><img src="assets/aprovados/aprovado-11.jpg" alt=""></div>
+            <div class="aprovado-card"><img src="assets/aprovados/aprovado-02.jpg" alt=""></div>
+            <div class="aprovado-card"><img src="assets/aprovados/aprovado-06.jpg" alt=""></div>
+            <div class="aprovado-card"><img src="assets/aprovados/aprovado-09.jpg" alt=""></div>
+            <div class="aprovado-card"><img src="assets/aprovados/aprovado-12.jpg" alt=""></div>
+            <div class="aprovado-card"><img src="assets/aprovados/aprovado-03.jpg" alt=""></div>
+            <div class="aprovado-card"><img src="assets/aprovados/aprovado-07.jpg" alt=""></div>
+            <div class="aprovado-card"><img src="assets/aprovados/aprovado-10.jpg" alt=""></div>
+            <div class="aprovado-card"><img src="assets/aprovados/aprovado-01.jpg" alt=""></div>
+            <div class="aprovado-card"><img src="assets/aprovados/aprovado-04.jpg" alt=""></div>
+          </div>
         </div>
       </div>
 
-      <a href="#oferta" class="btn-cta">
-        <span>QUERO ACESSAR A PLATAFORMA AGORA</span>
-        <i class="fa-solid fa-arrow-right"></i>
-      </a>
-
-      <div class="cta-micro-trust">
-        <span><i class="fa-solid fa-mobile-screen-button"></i> Estude pelo Celular</span>
-        <span><i class="fa-solid fa-bolt"></i> Liberação Imediata</span>
-        <span><i class="fa-solid fa-shield-check"></i> 7 Dias de Garantia</span>
+      <!-- Linha 3: Ordem C diferente (09..12, 01..08 intercaladas + cópia idêntica para loop infinito) -->
+      <div class="aprovados-marquee">
+        <div class="aprovados-marquee-track dir-left-slow">
+          <div class="aprovados-marquee-group">
+            <div class="aprovado-card"><img src="assets/aprovados/aprovado-09.jpg" alt="Alunos Aprovados 100% - 09">
+            </div>
+            <div class="aprovado-card"><img src="assets/aprovados/aprovado-04.jpg" alt="Alunos Aprovados 100% - 04">
+            </div>
+            <div class="aprovado-card"><img src="assets/aprovados/aprovado-10.jpg" alt="Alunos Aprovados 100% - 10">
+            </div>
+            <div class="aprovado-card"><img src="assets/aprovados/aprovado-07.jpg" alt="Alunos Aprovados 100% - 07">
+            </div>
+            <div class="aprovado-card"><img src="assets/aprovados/aprovado-12.jpg" alt="Alunos Aprovados 100% - 12">
+            </div>
+            <div class="aprovado-card"><img src="assets/aprovados/aprovado-01.jpg" alt="Alunos Aprovados 100% - 01">
+            </div>
+            <div class="aprovado-card"><img src="assets/aprovados/aprovado-06.jpg" alt="Alunos Aprovados 100% - 06">
+            </div>
+            <div class="aprovado-card"><img src="assets/aprovados/aprovado-11.jpg" alt="Alunos Aprovados 100% - 11">
+            </div>
+            <div class="aprovado-card"><img src="assets/aprovados/aprovado-03.jpg" alt="Alunos Aprovados 100% - 03">
+            </div>
+            <div class="aprovado-card"><img src="assets/aprovados/aprovado-08.jpg" alt="Alunos Aprovados 100% - 08">
+            </div>
+            <div class="aprovado-card"><img src="assets/aprovados/aprovado-02.jpg" alt="Alunos Aprovados 100% - 02">
+            </div>
+            <div class="aprovado-card"><img src="assets/aprovados/aprovado-05.jpg" alt="Alunos Aprovados 100% - 05">
+            </div>
+          </div>
+          <div class="aprovados-marquee-group" aria-hidden="true">
+            <div class="aprovado-card"><img src="assets/aprovados/aprovado-09.jpg" alt=""></div>
+            <div class="aprovado-card"><img src="assets/aprovados/aprovado-04.jpg" alt=""></div>
+            <div class="aprovado-card"><img src="assets/aprovados/aprovado-10.jpg" alt=""></div>
+            <div class="aprovado-card"><img src="assets/aprovados/aprovado-07.jpg" alt=""></div>
+            <div class="aprovado-card"><img src="assets/aprovados/aprovado-12.jpg" alt=""></div>
+            <div class="aprovado-card"><img src="assets/aprovados/aprovado-01.jpg" alt=""></div>
+            <div class="aprovado-card"><img src="assets/aprovados/aprovado-06.jpg" alt=""></div>
+            <div class="aprovado-card"><img src="assets/aprovados/aprovado-11.jpg" alt=""></div>
+            <div class="aprovado-card"><img src="assets/aprovados/aprovado-03.jpg" alt=""></div>
+            <div class="aprovado-card"><img src="assets/aprovados/aprovado-08.jpg" alt=""></div>
+            <div class="aprovado-card"><img src="assets/aprovados/aprovado-02.jpg" alt=""></div>
+            <div class="aprovado-card"><img src="assets/aprovados/aprovado-05.jpg" alt=""></div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -1456,7 +1910,8 @@
           <span class="total-questions"><i class="fa-solid fa-list-check"></i> +40 Provas Completas</span>
         </div>
         <h3>Mais de 40 Simulados Completos <span>Prontos para Você Testar</span></h3>
-        <p>Simulados gerais e separados por matéria (Legislação, Sinalização e Placas, Direção Defensiva, Primeiros Socorros, Meio Ambiente e Mecânica).</p>
+        <p>Simulados gerais e separados por matéria (Legislação, Sinalização e Placas, Direção Defensiva, Primeiros
+          Socorros, Meio Ambiente e Mecânica).</p>
         <div class="sim-features-mini">
           <div class="sim-feat-pill">
             <i class="fa-solid fa-clock"></i>
@@ -1496,7 +1951,8 @@
           </div>
 
           <p class="live-q-text">
-            Ao concluir o processo de primeira habilitação e ser aprovado nos exames, o candidato recebe inicialmente qual documento válido por 1 ano?
+            Ao concluir o processo de primeira habilitação e ser aprovado nos exames, o candidato recebe inicialmente
+            qual documento válido por 1 ano?
           </p>
 
           <div class="live-options" id="demo-options">
@@ -1556,7 +2012,8 @@
           </div>
           <div class="feature-row-body">
             <h3>Videoaulas Completas para a Prova Teórica</h3>
-            <p>Prefere aprender assistindo? A plataforma conta com uma área exclusiva de videoaulas didáticas cobrindo todo o conteúdo cobrado na prova do Detran, sem sair do sistema.</p>
+            <p>Prefere aprender assistindo? A plataforma conta com uma área exclusiva de videoaulas didáticas cobrindo
+              todo o conteúdo cobrado na prova do Detran, sem sair do sistema.</p>
           </div>
         </div>
 
@@ -1567,7 +2024,8 @@
           </div>
           <div class="feature-row-body">
             <h3>Guia Definitivo: Como Tirar a CNH Passo a Passo</h3>
-            <p>As 7 etapas explicadas sem enrolação: desde baixar o app CNH Digital Brasil, abertura no Detran e taxas, até o psicotécnico, agendamento da teórica e prova prática.</p>
+            <p>As 7 etapas explicadas sem enrolação: desde baixar o app CNH Digital Brasil, abertura no Detran e taxas,
+              até o psicotécnico, agendamento da teórica e prova prática.</p>
             <div class="step-pills-scroll">
               <span class="step-mini-pill"><b>1.</b> App CNH Digital</span>
               <span class="step-mini-pill"><b>2.</b> Abertura Detran</span>
@@ -1587,7 +2045,8 @@
           </div>
           <div class="feature-row-body">
             <h3>Apostila Digital nas 6 Disciplinas + Quadros de Revisão</h3>
-            <p>Conteúdo completo com quadros visuais e alertas de "Atenção para a prova" nas matérias de Legislação, Direção Defensiva, Primeiros Socorros, Cidadania, Meio Ambiente e Mecânica.</p>
+            <p>Conteúdo completo com quadros visuais e alertas de "Atenção para a prova" nas matérias de Legislação,
+              Direção Defensiva, Primeiros Socorros, Cidadania, Meio Ambiente e Mecânica.</p>
           </div>
         </div>
       </div>
@@ -1653,7 +2112,8 @@
             <span class="mod-tag" style="background:#ffe4e6;color:#be123c">DIFERENCIAL · +40 PROVAS</span>
           </div>
           <h3>Simulados Oficiais Detran</h3>
-          <p>Mais de 40 simulados completos com cronômetro de 60 min e tela parecida com a que você terá no dia da prova.</p>
+          <p>Mais de 40 simulados completos com cronômetro de 60 min e tela parecida com a que você terá no dia da
+            prova.</p>
           <div class="mod-footer">
             <span><i class="fa-solid fa-star" style="color:#f59e0b"></i> Modo Prova Real</span>
             <span class="status-pill"><i class="fa-solid fa-check"></i> Incluso</span>
@@ -1667,7 +2127,8 @@
             <span class="mod-tag">ETAPA FINAL</span>
           </div>
           <h3>Preparação para a Prova Prática</h3>
-          <p>Orientações sobre percurso, comandos do examinador, controle do veículo e faltas mais comuns para evitar.</p>
+          <p>Orientações sobre percurso, comandos do examinador, controle do veículo e faltas mais comuns para evitar.
+          </p>
           <div class="mod-footer">
             <span><i class="fa-solid fa-car-side"></i> Carro e Moto</span>
             <span class="status-pill"><i class="fa-solid fa-check"></i> Incluso</span>
@@ -1706,9 +2167,11 @@
           </div>
           <ul class="compare-list">
             <li><i class="fa-solid fa-xmark"></i> Apostilas gigantes e cansativas que dão sono em 10 minutos.</li>
-            <li><i class="fa-solid fa-xmark"></i> Chega no dia da prova sem nunca ter treinado no sistema com cronômetro.</li>
+            <li><i class="fa-solid fa-xmark"></i> Chega no dia da prova sem nunca ter treinado no sistema com
+              cronômetro.</li>
             <li><i class="fa-solid fa-xmark"></i> Fica perdido sem saber qual o próximo passo no Detran.</li>
-            <li><i class="fa-solid fa-xmark"></i> Risco alto de reprovar e pagar taxas extras de reteste e esperar semanas.</li>
+            <li><i class="fa-solid fa-xmark"></i> Risco alto de reprovar e pagar taxas extras de reteste e esperar
+              semanas.</li>
           </ul>
         </div>
 
@@ -1717,10 +2180,14 @@
             <i class="fa-solid fa-circle-check"></i> Com a Plataforma Micael Lucas
           </div>
           <ul class="compare-list">
-            <li><i class="fa-solid fa-check"></i> <strong>+40 Simulados Completos</strong> idênticos à experiência do dia da prova.</li>
-            <li><i class="fa-solid fa-check"></i> <strong>Videoaulas + Resumos Visuais</strong> direto no seu celular, no seu ritmo.</li>
-            <li><i class="fa-solid fa-check"></i> <strong>Passo a passo completo</strong> desde o aplicativo CNH Digital até pegar a carteira.</li>
-            <li><i class="fa-solid fa-check"></i> Você descobre seus pontos fracos antes da prova e chega 100% confiante!</li>
+            <li><i class="fa-solid fa-check"></i> <strong>+40 Simulados Completos</strong> idênticos à experiência do
+              dia da prova.</li>
+            <li><i class="fa-solid fa-check"></i> <strong>Videoaulas + Resumos Visuais</strong> direto no seu celular,
+              no seu ritmo.</li>
+            <li><i class="fa-solid fa-check"></i> <strong>Passo a passo completo</strong> desde o aplicativo CNH Digital
+              até pegar a carteira.</li>
+            <li><i class="fa-solid fa-check"></i> Você descobre seus pontos fracos antes da prova e chega 100%
+              confiante!</li>
           </ul>
         </div>
       </div>
@@ -1746,10 +2213,12 @@
               </div>
             </div>
             <div class="testi-stars">
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
             </div>
           </div>
-          <p class="testi-text">"O que mais me ajudou foram os simulados com cronômetro. Quando sentei pra fazer a prova oficial parecia que eu já estava em casa fazendo mais um treino na plataforma do Micael!"</p>
+          <p class="testi-text">"O que mais me ajudou foram os simulados com cronômetro. Quando sentei pra fazer a prova
+            oficial parecia que eu já estava em casa fazendo mais um treino na plataforma do Micael!"</p>
         </div>
 
         <div class="testi-card">
@@ -1762,10 +2231,12 @@
               </div>
             </div>
             <div class="testi-stars">
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
             </div>
           </div>
-          <p class="testi-text">"Eu estava super perdida sobre o que fazer primeiro no Detran e morria de medo do psicotécnico e da teórica. O guia passo a passo e as videoaulas salvaram demais!"</p>
+          <p class="testi-text">"Eu estava super perdida sobre o que fazer primeiro no Detran e morria de medo do
+            psicotécnico e da teórica. O guia passo a passo e as videoaulas salvaram demais!"</p>
         </div>
 
         <div class="testi-card">
@@ -1778,10 +2249,60 @@
               </div>
             </div>
             <div class="testi-stars">
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
             </div>
           </div>
-          <p class="testi-text">"Fiz mais de 20 simulados pelo celular no ônibus indo pro trabalho. Cheguei na prova tranquilo, terminei em 25 minutos e passei de primeira."</p>
+          <p class="testi-text">"Fiz mais de 20 simulados pelo celular no ônibus indo pro trabalho. Cheguei na prova
+            tranquilo, terminei em 25 minutos e passei de primeira."</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8.5. SOBRE MIM: INSTRUTOR MICAEL LUCAS -->
+  <section class="section" id="sobre" style="padding-top: 10px;">
+    <div class="mobile-wrap">
+      <div class="about-card">
+        <div class="about-photo-wrap">
+          <img src="assets/instrutor-micael-lucas.jpg" alt="Instrutor Autônomo Micael Lucas" loading="lazy">
+          <div class="about-photo-Wrap-gradient"></div>
+        </div>
+
+        <div class="about-body">
+          <span class="about-kicker">Sobre Mim · Quem Criou o Método</span>
+          <h2 class="about-title">Instrutor Micael Lucas</h2>
+
+          <p class="about-text">
+            Sou <strong>Instrutor Autônomo de Trânsito credenciado pelo Detran</strong> e acompanho diariamente alunos que sonham em conquistar a primeira habilitação (CNH) nas categorias A e B.
+          </p>
+          <p class="about-text">
+            Vendo tanta gente boa reprovar na prova teórica apenas por nervosismo, falta de direcionamento ou por estudar em apostilas confusas, criei esta <strong>Plataforma de Estudos com mais de 40 simulados no formato real do exame</strong>, videoaulas e o passo a passo completo para você chegar no Detran com total confiança e passar de primeira.
+          </p>
+
+          <div class="about-highlights">
+            <div class="about-hl-item">
+              <i class="fa-solid fa-id-card-clip"></i>
+              <span>Credenciado Oficial Detran</span>
+            </div>
+            <div class="about-hl-item">
+              <i class="fa-solid fa-trophy"></i>
+              <span>Centenas de Aprovados</span>
+            </div>
+            <div class="about-hl-item">
+              <i class="fa-solid fa-car-side"></i>
+              <span>Especialista Cat. A e B</span>
+            </div>
+            <div class="about-hl-item">
+              <i class="fa-solid fa-mobile-screen-button"></i>
+              <span>Método Direto ao Ponto</span>
+            </div>
+          </div>
+
+          <a href="https://www.instagram.com/instrutormicaellucas" target="_blank" rel="noopener noreferrer" class="btn-instagram">
+            <i class="fa-brands fa-instagram" style="font-size: 17px;"></i>
+            <span>Acompanhe no Instagram @instrutormicaellucas</span>
+          </a>
         </div>
       </div>
     </div>
@@ -1799,7 +2320,8 @@
         <div class="offer-checklist">
           <div class="offer-check-item">
             <i class="fa-solid fa-circle-check"></i>
-            <span><strong>+40 Simulados Completos:</strong> Sistema parecido com o dia da prova oficial (30 questões + cronômetro 60 min).</span>
+            <span><strong>+40 Simulados Completos:</strong> Sistema parecido com o dia da prova oficial (30 questões +
+              cronômetro 60 min).</span>
           </div>
           <div class="offer-check-item">
             <i class="fa-solid fa-circle-check"></i>
@@ -1807,42 +2329,51 @@
           </div>
           <div class="offer-check-item">
             <i class="fa-solid fa-circle-check"></i>
-            <span><strong>Guia Definitivo da CNH:</strong> O passo a passo completo do zero até a habilitação na mão.</span>
+            <span><strong>Guia Definitivo da CNH:</strong> O passo a passo completo do zero até a habilitação na
+              mão.</span>
           </div>
           <div class="offer-check-item">
             <i class="fa-solid fa-circle-check"></i>
-            <span><strong>Apostila Digital nas 6 Matérias:</strong> Com quadros visuais de revisão e dicas de prova.</span>
+            <span><strong>Apostila Digital nas 6 Matérias:</strong> Com quadros visuais de revisão e dicas de
+              prova.</span>
           </div>
           <div class="offer-check-item">
             <i class="fa-solid fa-circle-check"></i>
-            <span><strong>Módulos Extras:</strong> Psicotécnico, Preparação para Prova Prática e Central de Dúvidas.</span>
+            <span><strong>Módulos Extras:</strong> Psicotécnico, Preparação para Prova Prática e Central de
+              Dúvidas.</span>
+          </div>
+          <div class="offer-check-item">
+            <i class="fa-solid fa-circle-check"></i>
+            <span><strong>Acesso Completo pela Hotmart:</strong> Compra 100% segura e liberação imediata do seu
+              acesso.</span>
           </div>
         </div>
 
         <div class="price-box">
-          <p class="price-old">De R$ 147,00 por apenas</p>
+          <p class="price-old">De <s>R$ 147,00</s> por apenas:</p>
           <div class="price-main">
-            R$ 67,00
+            <small>9x de</small> R$ 8,60
           </div>
-          <p class="price-cash">Valor promocional de <strong>Black Friday</strong> · PIX ou Cartão</p>
+          <p class="price-cash">ou <span>R$ 67,00 à vista</span></p>
         </div>
 
-        <a href="https://pay.hotmart.com/Y108423909U?off=r0pfn28r" class="btn-cta gold-cta" id="btn-comprar-principal" target="_blank" rel="noopener noreferrer">
+        <a href="https://pay.hotmart.com/Y108423909U?off=r0pfn28r" class="btn-cta gold-cta" id="btn-comprar-principal"
+          target="_blank" rel="noopener noreferrer">
           <span>LIBERAR MEU ACESSO AGORA</span>
           <i class="fa-solid fa-lock-open"></i>
         </a>
 
         <div class="cta-micro-trust" style="margin-top: 12px;">
-          <span><i class="fa-brands fa-pix"></i> PIX Imediato</span>
-          <span><i class="fa-regular fa-credit-card"></i> Cartão</span>
-          <span><i class="fa-brands fa-whatsapp"></i> Acesso no E-mail e WhatsApp</span>
+          <span><i class="fa-solid fa-shield-halved"></i> Acesso Completo pela Hotmart</span>
+          <span><i class="fa-solid fa-bolt"></i> Liberação Imediata no E-mail</span>
         </div>
 
         <div class="guarantee-strip">
           <i class="fa-solid fa-award"></i>
           <div>
             <strong>Garantia Incondicional de 7 Dias</strong>
-            <span>Entre na plataforma, teste os simulados e assista às aulas. Se não gostar, devolvemos 100% do seu dinheiro sem burocracia.</span>
+            <span>Entre na plataforma, teste os simulados e assista às aulas. Se não gostar, devolvemos 100% do seu
+              dinheiro sem burocracia.</span>
           </div>
         </div>
       </div>
@@ -1864,7 +2395,9 @@
             <i class="fa-solid fa-chevron-down"></i>
           </summary>
           <div class="faq-body">
-            Você terá acesso a simulados completos no Modo Prova Real (30 questões sorteadas, cronômetro de 60 minutos, grade de navegação e meta de 21 acertos) e também simulados separados por matéria (Legislação, Sinalização, Direção Defensiva, Primeiros Socorros, Meio Ambiente e Mecânica), com gabarito na hora!
+            Você terá acesso a simulados completos no Modo Prova Real (30 questões sorteadas, cronômetro de 60 minutos,
+            grade de navegação e meta de 21 acertos) e também simulados separados por matéria (Legislação, Sinalização,
+            Direção Defensiva, Primeiros Socorros, Meio Ambiente e Mecânica), com gabarito na hora!
           </div>
         </details>
 
@@ -1874,7 +2407,8 @@
             <i class="fa-solid fa-chevron-down"></i>
           </summary>
           <div class="faq-body">
-            Sim! A plataforma do Instrutor Micael Lucas foi desenhada especialmente para funcionar perfeitamente no celular (Android e iPhone), além de tablet e computador, sem precisar instalar nada pesado.
+            Sim! A plataforma do Instrutor Micael Lucas foi desenhada especialmente para funcionar perfeitamente no
+            celular (Android e iPhone), além de tablet e computador, sem precisar instalar nada pesado.
           </div>
         </details>
 
@@ -1884,7 +2418,8 @@
             <i class="fa-solid fa-chevron-down"></i>
           </summary>
           <div class="faq-body">
-            Sim! Além dos mais de 40 simulados e da apostila digital interativa, você tem o módulo de Videoaulas completas e o Guia Definitivo da CNH, que explica passo a passo todas as 7 etapas para tirar sua carteira.
+            Sim! Além dos mais de 40 simulados e da apostila digital interativa, você tem o módulo de Videoaulas
+            completas e o Guia Definitivo da CNH, que explica passo a passo todas as 7 etapas para tirar sua carteira.
           </div>
         </details>
 
@@ -1894,7 +2429,9 @@
             <i class="fa-solid fa-chevron-down"></i>
           </summary>
           <div class="faq-body">
-            Assim que o pagamento é confirmado (no PIX ou Cartão é imediato), você recebe seus dados de acesso diretamente no seu e-mail e no seu WhatsApp para entrar na plataforma na mesma hora.
+            O pagamento e a entrega são feitos de forma 100% segura pela <strong>Hotmart</strong>. Assim que o pagamento
+            é confirmado, você recebe imediatamente o seu acesso completo pela Hotmart diretamente no seu e-mail para
+            entrar na plataforma na mesma hora.
           </div>
         </details>
 
@@ -1904,7 +2441,8 @@
             <i class="fa-solid fa-chevron-down"></i>
           </summary>
           <div class="faq-body">
-            Pode sim! Você pode refazer todos os simulados quantas vezes quiser até atingir 28, 29 ou 30 pontos com tranquilidade e chegar afiado no dia do exame oficial.
+            Pode sim! Você pode refazer todos os simulados quantas vezes quiser até atingir 28, 29 ou 30 pontos com
+            tranquilidade e chegar afiado no dia do exame oficial.
           </div>
         </details>
       </div>
@@ -1915,13 +2453,23 @@
   <footer class="footer">
     <div class="mobile-wrap">
       <p><strong>Plataforma de Estudos · Instrutor Autônomo Micael Lucas</strong></p>
-      <p style="margin-top: 6px;">Conteúdo de apoio à formação de condutores · Consulte sempre a legislação atualizada.</p>
-      <p style="margin-top: 8px; opacity: 0.75;">© 2026 Todos os direitos reservados · Termos de Uso · Política de Privacidade</p>
+      <p style="margin-top: 6px;">Conteúdo de apoio à formação de condutores · Consulte sempre a legislação atualizada.
+      </p>
+      <p style="margin-top: 8px; opacity: 0.75;">© 2026 Todos os direitos reservados · Termos de Uso · Política de
+        Privacidade</p>
     </div>
   </footer>
 
   <!-- SCRIPTS INTERATIVOS -->
   <script>
+    // 1. Navegação do Carrossel de Alunos Aprovados 100%
+    function scrollAprovados(dir) {
+      var track = document.getElementById('aprovados-track');
+      if (!track) return;
+      var slide = track.querySelector('.aprovado-slide');
+      var step = slide ? (slide.offsetWidth + 12) : 280;
+      track.scrollBy({ left: dir * step, behavior: 'smooth' });
+    }
     // 1. Troca de abas do Preview da Plataforma no Hero
     var previewImages = [
       'assets/print-hero.jpg',
@@ -1935,14 +2483,14 @@
         img.src = previewImages[index];
       }
       var tabs = document.querySelectorAll('.frame-tab');
-      tabs.forEach(function(t) { t.classList.remove('active'); });
+      tabs.forEach(function (t) { t.classList.remove('active'); });
       if (btn) btn.classList.add('active');
     }
 
     // 2. Demo interativo de questão do simulado
     function answerDemo(btn, isCorrect) {
       var allBtns = document.querySelectorAll('#demo-options .live-op-btn');
-      allBtns.forEach(function(b) {
+      allBtns.forEach(function (b) {
         b.classList.remove('correct', 'wrong');
       });
 
@@ -1960,11 +2508,11 @@
     }
 
     // 3. Cronômetro regressivo demonstrativo do Simulado
-    (function() {
+    (function () {
       var totalSec = 59 * 60 + 42;
       var timerEl = document.getElementById('demo-timer');
       if (!timerEl) return;
-      setInterval(function() {
+      setInterval(function () {
         if (totalSec > 0) totalSec--;
         var m = String(Math.floor(totalSec / 60)).padStart(2, '0');
         var s = String(totalSec % 60).padStart(2, '0');
@@ -1973,5 +2521,5 @@
     })();
   </script>
 </body>
-</html>
 
+</html>
